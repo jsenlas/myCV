@@ -1,0 +1,104 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper,sans]{moderncv}        
+
+% moderncv themes
+\moderncvstyle{casual}                             
+\moderncvcolor{blue}                               
+\nopagenumbers{}                                 %page numbering
+
+% character encoding
+\usepackage[utf8]{inputenc}                       
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\setlength{\hintscolumnwidth}{4cm}
+
+% personal data
+\name{Samuel}{Stuchlý}
+\title{Curriculum Vitae}                               
+\address{Baška 194}{040 16, \href{https://www.baska-obec.sk/}{Baška}}{Slovensko}
+
+\phone[mobile]{+421 944 147 463}                   
+\email{sstuchly97@gmail.com}                               
+\social[github]{SamuelStuchly} 
+
+\photo[72pt][0.4pt]{photo.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+%============================================================================================
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{publications.bib}
+%============================================================================================
+
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{2012--2017}{Bilingual High School of st. Edith Stein}{Košice, Slovakia}{}{}{English language}
+\cventry{2016--2017}{High school Collegium of Anton Neuwirth}{Košice, Slovakia}{}{}{}
+\cventry{2017--}{Brno University of Technology}{Brno}{Information Technology}{}{}
+
+\section{Experience}
+\cventry{07\--2019 --}{Internship}{Red Hat}{Brno}{CCX Dev team}{}
+
+\section{Languages}
+\cvitemwithcomment{Slovak}{Native language}{}
+\cvitemwithcomment{English}{C1}{}
+
+
+\section{Programming Languages/Tools}
+\subsection{Internship experience}
+
+% \cvitemwithcomment{Internship experience :}{}{}
+\cvitemwithcomment{-}{Python 3, Flask, Pytest}{}
+\cvitemwithcomment{-}{Redis queue}{}
+\cvitemwithcomment{-}{Jenkins}{}
+\cvitemwithcomment{-}{Openshift}{Attended DO280 Red Hat OpenShift Administration II: Operating a Production Kubernetes Cluster.}
+\cvitemwithcomment{-}{Helm}{}
+\cvitemwithcomment{-}{Prometheus}{}
+\cvitemwithcomment{-}{Grafana}{}
+\cvitemwithcomment{-}{Gitlab CI}{}
+\newpage
+\subsection{University experience }
+\\
+\cvitemwithcomment{-}{C}{}
+\cvitemwithcomment{-}{C\#}{}
+\cvitemwithcomment{-}{Java}{}
+\cvitemwithcomment{-}{Kubernetes}{Currently writing Bachelor theses about Kubernetes based Mini-Cloud setup. }
+\cvitemwithcomment{-}{Ansible automation}{In relation to bachelor theses.}
+\cvitemwithcomment{-}{Python 3 - Django, Numpy, Selenium}{}
+\cvitemwithcomment{-}{Swift}{}
+\cvitemwithcomment{-}{Database \-- SQL}{}
+
+
+
+\section{Other Skills}
+\cvlistitem{2+ years of Linux user experience}{}
+\cvlistdoubleitem{Communication skills}{Creativity}
+\cvlistdoubleitem{Willingness to learn}{Drivers licence (B)}
+
+
+\section{Interests}
+\cvlistitem{Object oriented programming - Python, Java}
+\cvlistitem{Cloud native -- development, orchestration -- Openshift, Kubernetes}
+\cvlistitem{Automation}
+\cvlistitem{Reading}
+\cvlistitem{Cinema}
+\nocite{*}
+
+
+\end{document}
+
+
