@@ -9,7 +9,8 @@
 \documentclass[12pt,a4paper,sans]{moderncv}        
 
 % moderncv themes
-\moderncvstyle{casual}                             
+\moderncvstyle{classic}                             
+% \moderncvstyle{fancy} 
 \moderncvcolor{blue}                               
 \nopagenumbers{}                                 %page numbering
 
@@ -23,11 +24,14 @@
 % personal data
 \name{Samuel}{Stuchlý}
 \title{Curriculum Vitae}                               
-\address{Baška 194}{040 16, \href{https://www.baska-obec.sk/}{Baška}}{Slovensko}
+\address{Baška 194}{040 16, \href{https://www.baska-obec.sk/}{Baška}}{Slovakia}
 
 \phone[mobile]{+421 944 147 463}                   
-\email{sstuchly97@gmail.com}                               
+\email{sstuchly97@gmail.com}      
+\social[linkedin]{samuel-stuchly-83b5b5225}
 \social[github]{SamuelStuchly} 
+
+
 
 \photo[72pt][0.4pt]{photo.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 % \quote{Some quote}                                 % optional, remove / comment the line if not wanted
@@ -48,53 +52,72 @@
 \section{Education}
 \cventry{2012--2017}{Bilingual High School of st. Edith Stein}{Košice, Slovakia}{}{}{English language}
 \cventry{2016--2017}{High school Collegium of Anton Neuwirth}{Košice, Slovakia}{}{}{}
-\cventry{2017--}{Brno University of Technology}{Brno}{Information Technology}{}{}
+\cventry{2017--2021}{Brno University of Technology}{Brno}{}{}{Bachelors degree in Information Technology}
 
 \section{Experience}
-\cventry{07\--2019 --}{Internship}{Red Hat}{Brno}{CCX Dev team}{}
-
-\section{Languages}
-\cvitemwithcomment{Slovak}{Native language}{}
-\cvitemwithcomment{English}{C1}{}
+\cventry{07\--2019--01-2021}{Software engineer Intern}{Red Hat}{Brno}{CCX Dev team}{Python programming and DevOps related tasks concerning Openshift.}
+\cventry{02\--2021--}{Software engineer Intern}{Red Hat}{Brno}{Cloud infrastructure team}{Contributing to Openshift's machine-api-operator and related repositories. Working with cloud platforms and their apis. Go programming. Openshift/Kubernetes.}
+\cventry{07\--2021--02-2022}{Kubernetes admin Scholarship}{Brno University of Technology}{Brno}{}{Cluster setup,deployment of applications and administration of an \mbox{on--premise} Kuberenetes cluster for Brno University of Technology.}
 
 
+% \newpage
 \section{Programming Languages/Tools}
+\smallskip
+\subsection{University experience }
+\\
+\cvitemwithcomment{-}{C}{}
+\cvitemwithcomment{-}{C\#, Java, Swift}{}
+
+\cvitemwithcomment{-}{Python 3 - Django, Selenium, Numpy, Pandas}{}
+
+\cvitemwithcomment{-}{Database \-- SQL/NoSql \-- PostgreSQL, MongoDB}{}
+\cvitemwithcomment{-}{Kubernetes}{ Bachelor's theses -- \href{https://www.fit.vut.cz/study/thesis-file/23720/23720.pdf}{Setup of Application-Computation On-Premise Mini-Cloud Based on Kubernetes.} }
+\cvitemwithcomment{-}{JupyterHub}{}
+
+% \bigskip
+
 \subsection{Internship experience}
 
 % \cvitemwithcomment{Internship experience :}{}{}
-\cvitemwithcomment{-}{Python 3, Flask, Pytest}{}
+\cvitemwithcomment{-}{Golang}{}
+\cvitemwithcomment{-}{Docker/Podman}{}
+\cvitemwithcomment{-}{Openshift}{Attended DO280 Red Hat OpenShift Administration II: Operating a Production Kubernetes Cluster.}
+\cvitemwithcomment{-}{Kubernetes/ Cluster-api project}{}
+\cvitemwithcomment{-}{Google Cloud Platform}{}
+
+\cvitemwithcomment{-}{Python 3 - Flask, Pytest}{}
 \cvitemwithcomment{-}{Redis queue}{}
 \cvitemwithcomment{-}{Jenkins}{}
-\cvitemwithcomment{-}{Openshift}{Attended DO280 Red Hat OpenShift Administration II: Operating a Production Kubernetes Cluster.}
 \cvitemwithcomment{-}{Helm}{}
 \cvitemwithcomment{-}{Prometheus}{}
 \cvitemwithcomment{-}{Grafana}{}
 \cvitemwithcomment{-}{Gitlab CI}{}
-\newpage
-\subsection{University experience }
-\\
-\cvitemwithcomment{-}{C}{}
-\cvitemwithcomment{-}{C\#}{}
-\cvitemwithcomment{-}{Java}{}
-\cvitemwithcomment{-}{Kubernetes}{Currently writing Bachelor theses about Kubernetes based Mini-Cloud setup. }
-\cvitemwithcomment{-}{Ansible automation}{In relation to bachelor theses.}
-\cvitemwithcomment{-}{Python 3 - Django, Numpy, Selenium}{}
-\cvitemwithcomment{-}{Swift}{}
-\cvitemwithcomment{-}{Database \-- SQL}{}
+\cvitemwithcomment{-}{Bash}{}
+
+
+
+
 
 
 
 \section{Other Skills}
-\cvlistitem{2+ years of Linux user experience}{}
-\cvlistdoubleitem{Communication skills}{Creativity}
-\cvlistdoubleitem{Willingness to learn}{Drivers licence (B)}
+\cvlistdoubleitem{\mbox{Linux user experience (3 years)}}{Git}
+\cvlistdoubleitem{Jira \-- Issue tracking}{Communication skills}
+\cvlistdoubleitem{Willingness to learn}{Creativity}
+\cvlistdoubleitem{Drivers licence (B)}{}
 
+\section{Languages}
+\cvitemwithcomment{Slovak}{Native language}{}
+\cvitemwithcomment{Czech}{C1}{}
+\cvitemwithcomment{English}{C1}{}
 
+% \newpage
 \section{Interests}
-\cvlistitem{Object oriented programming - Python, Java}
-\cvlistitem{Cloud native -- development, orchestration -- Openshift, Kubernetes}
-\cvlistitem{Automation}
-\cvlistitem{Reading}
+\cvlistitem{Object oriented programming - Python, Java, Golang}
+\cvlistitem{Cloud platforms/services}
+\cvlistitem{Cloud native \-- development, orchestration \-- Openshift, Kubernetes, Containerization}
+\cvlistitem{Linux operating system}
+\cvlistitem{Gaming}
 \cvlistitem{Cinema}
 \nocite{*}
 
